@@ -72,7 +72,7 @@ for f1 in forma1:
     atlagos_futamszam += int(f1[3])
 atlagos_futamszam /= len(forma1)
 
-print(f"Átlagos futamszám: {atlagos_futamszam}")
+print(f"Átlagos futamszám: {atlagos_futamszam:.2f}")
 
 # Végső statisztika:
 with open('kiirt_adatok/statisztika.txt', 'w', encoding='utf8') as c:
@@ -80,4 +80,4 @@ with open('kiirt_adatok/statisztika.txt', 'w', encoding='utf8') as c:
     c.write(f"2. A legtöbb futamot nyert versenyző: {legtobb_nyert_futam}\n")
     c.write(f"3. A legkevesebb futamot nyert versenyző: {legkevesebb_nyert_futam}\n")
     c.write(f"4. A legtöbb futamot teljesített versenyző: {legtobb_teljesített_futam}\n")
-    c.write(f"5. Az átlagos futamszám: {atlagos_futamszam}")
+    c.write(f"5. Az átlagos futamszám: {atlagos_futamszam:.2f}")
